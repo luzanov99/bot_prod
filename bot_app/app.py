@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 # Initialize bot and dispatcher
 storage = MemoryStorage()
 
-bot = Bot(token=os.environ.get("API_TOKEN"))
+bot = Bot(token= os.environ.get("API_TOKEN "))
 dp = Dispatcher(bot, storage=storage)
 
 @dp.message_handler(commands=['register'])
